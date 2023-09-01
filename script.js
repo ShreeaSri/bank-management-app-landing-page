@@ -45,11 +45,11 @@ btnScrollTo.addEventListener('click', function (e) {
   );
 
   //scrolling old way
-  // window.scrollTo({
-  //   left: s1coords.left + window.pageXOffset,
-  //   top: s1coords.top + window.pageYOffset,
-  //   behavior: 'smooth',
-  // });
+  window.scrollTo({
+    left: s1coords.left + window.pageXOffset,
+    top: s1coords.top + window.pageYOffset,
+    behavior: 'smooth',
+  });
 
   //modern way scrolling
   // section1.scrollIntoView({ behavior: 'smooth' });
