@@ -282,3 +282,139 @@ const slider = function () {
 slider();
 
 ////////////////////////////////////////////////////////////////
+// javascript coding practice to build this project
+
+// / const randomInt = (min, max) =>
+//   Math.floor(Math.random() * (max - min + 1) + min);
+// const randomColor = () =>
+//   `rgb(${randomInt(0, 255)},${randomInt(0, 255)},${randomInt(0, 255)})`;
+
+// document.querySelector('.nav__link').addEventListener('click', function (e) {
+//   this.style.backgroundColor = randomColor();
+//   console.log('LINK', e.target, e.currentTarget);
+
+//   //stop propagation
+//   // e.stopPropagation();
+// });
+
+// document.querySelector('.nav__links').addEventListener('click', function (e) {
+//   this.style.backgroundColor = randomColor();
+//   console.log('CONTAINER', e.target, e.currentTarget);
+// });
+
+// document.querySelector('.nav').addEventListener('click', function (e) {
+//   this.style.backgroundColor = randomColor();
+//   console.log('NAV', e.target, e.currentTarget);
+// });
+
+//selecting element
+// console.log(document.documentElement);
+// const header = document.querySelector('.header');
+// console.log(document.querySelectorAll('.section'));
+// console.log(document.getElementById('section--1'));
+// console.log(document.getElementsByClassName('btn'));
+// console.log(document.getElementsByTagName('button'));
+
+//creating and inserting element
+// .insertAdjacentHTML()
+
+// const divisionElement = document.createElement('div');
+// console.log(divisionElement);
+// divisionElement.classList.add('cookie-message');
+// divisionElement.textContent =
+//   'we use cookies for improved functionality and analytics';
+// divisionElement.innerHTML = `we use cookies for improved functionality and analytics. <button class ="btn btn--close-cookie">Got it!</button>`;
+
+// header.prepend(divisionElement);
+// header.append(divisionElement);
+// header.append(divisionElement.cloneNode(true));
+
+// header.before(divisionElement);
+// header.after(divisionElement);
+// document
+//   .querySelector('.btn--close-cookie')
+//   .addEventListener('click', function () {
+//     // divisionElement.remove();
+//     divisionElement.parentElement.removeChild(divisionElement);
+//   });
+
+//style
+// divisionElement.style.backgroundColor = '#37383d';
+// divisionElement.style.width = '120%';
+// console.log(getComputedStyle(divisionElement).color);
+// console.log(getComputedStyle(divisionElement).height);
+// divisionElement.style.height =
+//   parseFloat(getComputedStyle(divisionElement).height, 10) + 20 + 'px';
+// console.log(divisionElement.style.height);
+
+// document.documentElement.style.setProperty('--color-primary', 'orangered');
+
+//attributes
+// const logo = document.querySelector('.nav__logo');
+// console.log(logo.src);
+
+// console.log(logo.alt);
+// console.log(logo.getAttribute('designer'));
+// console.log(logo.getAttribute('alt'));
+// logo.alt = 'beautiful logo';
+// console.log(logo.alt);
+// logo.setAttribute('comapany', 'fundflow');
+// console.log(logo);
+
+//data attribute
+// console.log(logo.dataset.versionNumber);
+
+// const h1 = document.querySelector('h1');
+
+// const alertH1 = function (e) {
+//   alert('addEventListener: Great! you are reading the heading ;D ');
+
+// h1.removeEventListener('mouseenter', alertH1);
+// };
+
+// h1.addEventListener('mouseenter', alertH1);
+
+// h1.onmouseenter = function (e) {
+//   alert('addEventListener: Great! you are reading the heading ;D ');
+// };
+
+// setTimeout(() => h1.removeEventListener('mouseenter', alertH1), 3000);
+
+// const h1 = document.querySelector('h1');
+
+// //going downwares : child
+// console.log(h1.querySelectorAll('.highlight'));
+// console.log(h1.childNodes);
+// console.log(h1.children);
+// h1.firstElementChild.style.color = 'white';
+// h1.lastElementChild.style.color = 'orangered';
+
+// //going upwards : parent
+// console.log(h1.parentNode);
+// console.log(h1.parentElement);
+
+// h1.closest('.header').style.background = 'var(--gradient-secondary)';
+
+// h1.closest('h1').style.background = 'var(--gradient-primary)';
+
+// //going sideways : siblings
+// console.log(h1.previousElementSibling);
+// console.log(h1.nextElementSibling);
+// console.log(h1.previousSibling);
+// console.log(h1.nextSibling);
+// console.log(h1.parentElement.children);
+
+//intersection observer api
+// const obsCallback = function (entries, observer) {
+//   entries.forEach(entry => {
+//     console.log(entry);
+//   });
+// };
+
+// const obsOptions = {
+//   root: null,
+//   threshold: [0, 0.2],
+// };
+
+// const observer = new IntersectionObserver(obsCallback, obsOptions);
+// observer.observe(section1);
