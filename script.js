@@ -418,3 +418,17 @@ slider();
 
 // const observer = new IntersectionObserver(obsCallback, obsOptions);
 // observer.observe(section1);
+
+//dom lifecycle event
+// document.addEventListener('DOMContentLoaded', function (e) {
+//   console.log('html parsed and dom tree created', e);
+// });
+// window.addEventListener('load', function (e) {
+//   console.log('page finally loaded', e);
+// });
+
+// window.addEventListener('beforeunload', function (e) {
+//   e.preventDefault();
+//   console.log(e);
+//   e.returnValue = '';
+// });
